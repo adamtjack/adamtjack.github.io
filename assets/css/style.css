@@ -1,0 +1,22 @@
+.container { 
+    background-color: aqua;
+    color: white;
+    float: left;
+}
+
+
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    float: left;
+}
+
+h2 {
+    color: aqua;
+}
