@@ -1,3 +1,6 @@
+html { 
+    height: 100%;
+}
 .container { 
     padding: 20px;
     background-color: white;
@@ -22,7 +25,7 @@ h1 {
     padding: 20px;
     margin-left: 26%;
     font-size: 20px; 
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Georgia, 'Times New Roman', Times, serif;  
 }
 h2 {
     color: #7dc896;
@@ -30,7 +33,7 @@ h2 {
     margin-left: 0;
     padding: 20px;
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-bottom: 2px #666 solid;
     margin-bottom: 20px;
     background-image: url("../images/gplaypattern.png");
@@ -48,6 +51,14 @@ nav li {
     color: #666;
     font-family: Arial, Helvetica, sans-serif;
 }
+nav li::after {
+    content: "|";
+    padding: 10px;
+}
+nav li:last-child {
+    margin-right: 0;
+}
+
 nav li a {
     text-decoration: none;
     color: #666;
@@ -60,12 +71,15 @@ nav li a {
 
 #insidedetailbox{
     margin-left: 0;
-    border: 5px black;
+    border: 5px #666;
 }
 body {
     margin-left: 0;
     margin-right: 0;
-    border: 5px black;
+    border: 5px #666;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: [footer-height];
 
 }
 .clearfix::after {
@@ -77,7 +91,7 @@ body {
 #fancybox {
     background-image: url("../images/gplaypattern.png");
     padding: 20px;
-    border: 1px black solid;    
+    border: 1px #666 solid;    
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -85,12 +99,20 @@ p {
 }
 footer {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 25px;
     background-color: #7dc896;
     padding: 10px;
-
+    position: absolute;
+    left: 0 ; right: 0 ; bottom: 0 ;
+    height:[footer-height];
 }
 form {
     margin-left: 25%;
     margin-right: 25%
+    margin-top: 25%;
+    margin-bottom: 25%;
+    
+}
+input {
+    width: 675px;
 }
